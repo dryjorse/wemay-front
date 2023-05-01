@@ -1,0 +1,13 @@
+.root {
+  border: 1px solid #333333;
+  border-radius: 100px;
+  padding: 17px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.root input {
+  flex: 1 1 100%;
+  font-weight: 500;
+  line-height: 20px;
+}
