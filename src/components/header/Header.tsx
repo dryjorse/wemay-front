@@ -8,7 +8,9 @@ import { ReactComponent as Smile } from "../../assets/images/header/smile.svg";
 import { ReactComponent as Burger } from "../../assets/images/header/burger.svg";
 import { ReactComponent as Logo } from "../../assets/images/header/logo.svg";
 import { ReactComponent as Person } from "../../assets/images/header/person.svg";
+import { ReactComponent as ArrowDown } from "../../assets/images/header/arrow-down.svg";
 import s from "./header.module.css";
+import { menuList } from "../../utillities/utillities";
 
 const Header: React.FC = () => {
   return (
@@ -45,7 +47,14 @@ const Header: React.FC = () => {
           </div>
         </Button>
       </div>
-      <div className={s.line__two}></div>
+      <ul className={s.menu__list}>
+        {menuList.map((item, key) => (
+          <li key={key}>
+            <span>{item.name}</span>
+            <ArrowDown />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
