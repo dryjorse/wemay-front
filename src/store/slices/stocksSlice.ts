@@ -13,7 +13,7 @@ interface Stock {
 type StocksData = Stock[]
 
 export const getStocks = createAsyncThunk("stocks", async () => {
-  const { data } = await axios.get("http://localhost:3001/stocks");
+  const { data } = await axios.get("https://curious-bear-pea-coat.cyclic.app/stocks");
   return data as StocksData;
 });
 

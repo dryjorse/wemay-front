@@ -34,7 +34,7 @@ const Stocks: React.FC = () => {
           {data.map((stock) => (
             <li className={s.stock__item} key={stock.id}>
               <div
-                style={{ background: `url(${stock.image})` }}
+                style={{ background: `url(https://curious-bear-pea-coat.cyclic.app/${stock.image})` }}
                 className={s.stock__photo}
               >
                 <span className={s.stock__discount}>
